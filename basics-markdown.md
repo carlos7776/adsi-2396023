@@ -12,10 +12,12 @@ lorem *ipsum* **dolor** ***sit*** amet
 [//]:<> (lista ordenada)
     > lorem ipsum dolor sit amet
 ---
-1.php
-2.python
-3.ruby
-4.c sharp
+1. php
+    1. laravel 
+    2. yii
+2. python
+3. ruby
+4. c sharp
 ---
 [//]:<> (lista desordenada )
 - soccer
