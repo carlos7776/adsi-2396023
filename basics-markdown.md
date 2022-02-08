@@ -28,9 +28,11 @@ lorem *ipsum* **dolor** ***sit*** amet
 - tennis
  - basket
 ---
-[//]:<> (heading)
+
+[//]:<> (insertar codigo)
 `<input class="form-control" type="text" placeholder="UserName"`
 ---
+[//]:<> (insertar codigo link)
 [go to go](http://www.google.com)
 ![kiojuro rengoku](https://i1.wp.com/www.viajarporlibre.net/wp-content/uploads/2017/03/death-note-series-anime-viajar-por-libre.jpg?resize=759%2C500&ssl=1)
 ---
