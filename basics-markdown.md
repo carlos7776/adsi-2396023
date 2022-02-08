@@ -10,13 +10,14 @@
 lorem *ipsum* **dolor** ***sit*** amet
 ---
 [//]:<> (lista ordenada)
-> lorem ipsum dolor sit amet
+    > lorem ipsum dolor sit amet
+---
 1.php
 2.python
-3.rubu
+3.ruby
 4.c sharp
 ---
-[//]:<> (lsita desordenada )
+[//]:<> (lista desordenada )
 - soccer
         -inter
         - river palte
@@ -38,6 +39,10 @@ lorem ==ipsum dolor== sit amet
 | home Simpson |  homero1@gmail.com |
 | bart simpson |  bart@gmail.com |
 | lisa simpson | lisa@gmail.com |
+
+
+
+
 
 
 
