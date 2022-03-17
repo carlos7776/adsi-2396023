@@ -5,39 +5,38 @@ html {
 body {
     background: url(../images/bg-css3.jpg) no-repeat center;
     background-size: cover;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'kanit', sans-serif;
     font-weight: 200;
     min-height: 100vh;
 }
 main {
-    margin: 2rem auto;
-    width: 80%;
+    margin:5rem auto;
+    width: 31rem;
 }
 header h1 {
     background-color: #ffffff66;
-    border-bottom: 4px solid #0170ba;
-    color: #333;
-    padding: 2rem;
-    font-weight: 500;
+    color: rgb(0,0,0);
+    padding: 3rem;
     text-align: center;
+    border-bottom: 4px solid rgb(0, 129, 90);
 }
 header h1 a:link,
 header h1 a:visited {
-    background-color: #00000099;
-    color: #fff;
+    background-color: #006b4b88;
+    color: rgb(0,0,0);
     float: left;
-    padding: 0 6px;
+    padding: 0 3px;
     position: relative;
     text-decoration: none;
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in;
 }
 header h1 a:hover {
-    background-color: #000000bb;
-    transform: translateX(-10px);
+    background-color: #ffffffbb;
+    transform: translateX(-20px);
 }
 section {
-    background-color: #ffffffbb;
-    color: #333;
+    background-color: rgb(0,0,0,0.5);
+    color: rgb(199, 199, 199);
     padding: 2rem;
     min-height: 20rem;
 }

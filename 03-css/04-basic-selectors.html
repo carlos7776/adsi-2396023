@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic selectors</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        /* univerdal----------------*/
+       section *{
+            border: 1px solid slateblue;
+            padding: 10PX;
+        }
+        /*type-----------------------*/
+        ul{
+            list-style: none;
+        }
+        li{
+            font-size: 1.2rem;
+        }
+        /*descending----------------*/
+        ul li{
+            background-color: cadetblue;
+            color: white;
+
+        }
+         /*class--------------------*/
+         .upper{
+             text-transform: uppercase;
+         }
+         .underline{
+             text-decoration: underline;
+         }
+          /*identification----------------*/
+          #important{
+              background-color: slateblue;
+              font-weight: 500;
+          }
+           /*combine-----------------------*/
+           section ul.animes li#important{
+               color: greenyellow;
+           }
+    </style>
+
+</head>
+<body>
+    <main>
+        <header>
+            <h1><a href="index.html"> ⇠ </a> basic selectors</h1>
+        </header>
+        <section>
+            <ul class="animes">
+                <li class="upper underline">kimetsu no yaiba</li>
+                <li id="important">shingeki no kyojin</li>
+                <li class=>jujutsu kaisrer</li>
+                <li>jujutsu kaisen</li>
+                <li>nanatsu no taizai</li>
+
+            </ul>
+
+        </section>
+    </main>
+</body>
+</html>
