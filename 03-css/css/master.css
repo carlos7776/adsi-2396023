@@ -8,9 +8,10 @@ body {
     font-family: 'kanit', sans-serif;
     font-weight: 200;
     min-height: 100vh;
+
 }
 main {
-    margin:5rem auto;
+    margin:2rem auto;
     width: 31rem;
 }
 header h1 {
