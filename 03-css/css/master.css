@@ -36,7 +36,7 @@ header h1 a:hover {
     transform: translateX(-20px);
 }
 section {
-    background-color: rgb(0,0,0,0.5);
+    background-color: rgb(0,0,0,0.8);
     color: rgb(199, 199, 199);
     padding: 2rem;
     min-height: 20rem;
