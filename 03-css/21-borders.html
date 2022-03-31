@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        h2{
+            text-align:  center;
+        }
+        div.box {
+            border-style: solid;
+            height: 200px;
+            margin: 0  auto;
+            width: 320px;
+            
+        }
+        div.box1 {
+            border-style: solid;
+            height: 200px;
+            margin: 0  auto;
+            width: 320px;
+            /*esta es la forma larga para programar el borde*/
+            border-top-width: 2px;
+            border-right-width:6px ;
+            border-bottom-width:10px ;
+            border-left-width: 14px;
+            /*esta es la foma corta*/
+            border-width: 2px 6px 10px 14px;
+        }
+        div.box2 {
+            border-width: 14px;
+            border-top-color:red ;
+            border-right-color:blue ;
+            border-bottom-color:green;
+            border-left-color:yellow ;
+            border-color: red blue green yellow;
+        }
+        div.box3 {
+            border-width:4px;
+            /*forma larga de hacer borde*/
+            border-top-style:solid ;
+            border-right-style:dotted ;
+            border-bottom-style:dashed;
+            border-left-style:double ;
+            /*forma corta de hacer borde*/
+            border-style: solid dotted dashed double;
+        }
+        div.box4 {
+            border-width: 4px;
+            border-color: crimson;
+            border-style: dotted;
+            border:4px dotted crimson ;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1><a href="index.html"> ⇠ </a>border</h1>
+        </header>
+        <section>
+            <h2>border width:</h2>
+                <div class="box box1"></div>
+            
+            <h2>border color:</h2>
+                <div class="box box2"></div>
+            
+            <h2>border style:</h2>
+                <div class="box box3"></div>
+            <h2>shorthand:</h2>
+                <div class="box box4"></div>
+            
+        </section>
+    </main>
+</body>
+</html>

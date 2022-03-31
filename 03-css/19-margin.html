@@ -4,26 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>margin</title>
     <link rel="stylesheet" href="css/master.css">
     <style>
-        img {
-            height: 250px;
-            width: 250px;
-            margin: 120px;
-            margin-bottom: 120px;
-            margin-left: 90px;
-            margin-right: 110px;
+        .section{
+            background-color: rgb(219, 33, 33);
         }
+       .bg{
+            background: linear-gradient(135deg,rgb(241, 202, 202),10%,
+                                        transparent 0,                            
+                                        transparent 50%,
+                                        #0c2ce299 0,
+                                        #0c2ce299 60%,
+                                        transparent );
+            background-size: 7.07px 7.07px;
+        }
+        div.parent {
+position: absolute;
+height: 340px;
+left: 50%;
+transform: translateX(-50%) ;
+width: 380px;
+}
+div.child {
+background-color: #ffffff;
+height: 200px;
+font-size: 4rem;
+text-align: center;
+line-height: 12rem;
+/* - - - - - - - - */
+/* Y Axis (Vertical) */
+margin-top: 70px;
+margin-bottom: 70px;
+/* X Axis (Horizont) */
+margin-right: auto;
+margin-left: auto;
+/* ShortHand: margin: y x */
+margin: 70px auto;
+width: 200px;
+}
     </style>
+
 </head>
 <body>
     <main>
         <header>
-            <h1><a href="index.html"> ⇠ </a> Template</h1>
+            <h1><a href="index.html"> ⇠ </a> margin</h1>
         </header>
         <section>
-            <img src="images/12.jpg" alt="">
+           <div class="parent bg">
+               <div class="child">box</div>
+           </div>
         </section>
     </main>
 </body>
