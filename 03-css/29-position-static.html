@@ -4,17 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>background shorthand</title>
+    <title>background static</title>
     <link rel="stylesheet" href="css/master.css">
+    <style>
+        div.parent,
+        div.parent div,
+        div.parent a {
+            border: 2px solid rgba(226, 223, 36, 0.8);
+            padding: 5px;
+            color: aliceblue;
+        }
+        h3{
+            color: aliceblue;
+        }
+        div.parent div{
+            margin: 10px;
+        }
+        div.parent div.child1{
+            height: 60px;
+        }
+         div.parent div.child2{
+            height: 30px;
+        }
+        
+         div.parent div.child3{
+            height: 80px;
+        }
+        div.parent:nth-of-type(2){
+            padding: 20px;
+        }
+
+    </style>
 </head>
 <body>
     <main>
         <header>
-            <h1><a href="index.html"> ⇠ </a> background shorthand</h1>
+            <h1><a href="index.html"> ⇠ </a> background static</h1>
         </header>
         <section>
+            <h3>block elements</h3>
+            <div class="parent">
+                <div class="child1">block elements</div>
+                <div class="child2">block elements</div>
+                <div class="child3">block elements</div>
+            </div>
+        <!--  -->
+        <h3>inline elements</h3>
+        <div class="parent">
+            <a href="">inline elements</a>
+            <a href="">other inline elements</a>
 
+        </div>
         </section>
+
+        
     </main>
 </body>
 </html>
