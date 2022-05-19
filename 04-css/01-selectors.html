@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<style>
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        width: 380px;  
+    }
+    ul li{
+        border: 2px solid #ff0000;
+        background-color: aliceblue;
+        display: inline-block;
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding: 10px;
+        height: 40px;
+        text-align: center;
+        margin: 4px;
+        width: 40px;
+    }
+    ul li:first-of-type{
+        background-color: rgb(47, 0, 255,0.7);
+    }
+      ul li:last-of-type{
+        background-color: rgb(47, 0, 255,0.7);
+    }
+      ul li:nth-of-type(3){
+        background-color: rgb(109, 255, 141);
+    }
+    table{
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 380px;
+    }
+    table td{
+        background-color: #fffa;
+        border: 2px solid #333;
+        padding: 20px;
+    }
+    /*
+    table tr:nth-child(2n) td:nth-child(2n+1),
+    table tr:nth-child(2n+1) td:nth-child(2n){
+        background-color: #333;
+    */
+
+    table tr:nth-child(even) td:nth-child(odd),
+    table tr:nth-child(odd) td:nth-child(even){
+        background-color: #333;
+    }
+   /*home:target*/
+   nav{
+       margin: 0 auto;
+       width: 350px;
+   }
+   nav a:link,
+   nav a:visited {
+       background-color: #333;
+       color: #fff;
+       margin: 10px;
+       text-decoration: none;
+       padding: 4px 10px;
+   }
+   div#home,
+   div#services,
+   div#contact{
+       display: none;
+       margin: 0 auto;
+       width: 300px;
+   }
+    #home:target,
+   #services:target,
+   #contact:target{
+       display: block;
+   }
+   article{
+       text-align: justify;
+   }
+   article p:first-child::selection{
+       background-color: #cc0;
+   }
+    article p:nth-child(2)::selection{
+      background-color: #00c;
+    }
+
+      article p:last-child::selection{
+       background-color: red;
+   }
+
+
+</style>
+
+<body>
+    <main>
+        <header>
+            <h1><a href="index.html"> ⇠ </a> selectors</h1>
+        </header>
+        <section>
+            <h3>fist-of-type | last-of ype| nth-child(n) </h3>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <h3>nth-child</h3>
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <h3>#home:target</h3>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#services">Sevices</a>
+                <a href="#contact">Contac</a>
+            </nav>
+            <div id="home">
+                <h4>Home</h4>
+                <img src="http://placekitten.com/300/200">
+            </div>
+            <div id="services">
+                <h4>Services</h4>
+                <img src="http://placekitten.com/300/202">
+            </div>
+            <div id="contact">
+                <h4>Contac</h4>
+                <img src="http://placekitten.com/300/204">
+            </div>
+            <!---->
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus inventore, sed repellendus quibusdam molestias nemo
+                    hic repellat laborum quae est delectus quos ex officiis a iure qui laboriosam omnis mollitia dignissimos eligendi
+                    nisi modi? Dolorem saepe blanditiis ad deserunt temporibus?
+                </p>
+                
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus inventore, sed repellendus quibusdam molestias nemo
+                    hic repellat laborum quae est delectus quos ex officiis a iure qui laboriosam omnis mollitia dignissimos eligendi
+                    nisi modi? Dolorem saepe blanditiis ad deserunt temporibus?
+                </p>
+                
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus inventore, sed repellendus quibusdam molestias nemo
+                    hic repellat laborum quae est delectus quos ex officiis a iure qui laboriosam omnis mollitia dignissimos eligendi
+                    nisi modi? Dolorem saepe blanditiis ad deserunt temporibus?
+                </p>
+            </article>
+            
+
+        </section>
+    </main>
+</body>
+
+</html>
