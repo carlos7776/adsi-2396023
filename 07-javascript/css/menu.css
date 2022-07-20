@@ -48,7 +48,7 @@ nav {
     flex-direction: column;
     padding: 1.2rem;
     overflow-y: auto;
-    height: 344px;
+    height: 444px;
     gap: 0.4rem;
 }
 nav li {
