@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?="button"?></title>
+    <title><?="Template"?></title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fonts.css">
 </head>
@@ -22,7 +22,7 @@
                         <a class="nav-link" href="index.php">Main Menu (PHP) </a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="">button </a>
+                        <a class="nav-link" href=""> 03 - Comments </a>
                     </li>
                 </ul>
             </div>
@@ -31,11 +31,10 @@
     
     <main class="container">
         <div class="row">
-            <div class="col-md-6 offset-md-3 text-center">
-                <?php echo "<h1 class='text-center my-5'>button</h1>"; ?>
+            <div class="col-md-6 offset-md-3">
+                <?php echo "<h1 class='text-center my-5'>Template</h1>"; ?>
                 <hr>
-                <?php
-                
+                <?php 
 				// Define the classes of button
 				$classes = "btn btn-lg btn-outline-primary";
 				/*
@@ -46,7 +45,6 @@
 				# Print variable $classes into the class
 				?>
 				<a href="javascript:;" class="<?=$classes?>"> This is a Button </a>
-                
             </div>
         </div>
     </main>

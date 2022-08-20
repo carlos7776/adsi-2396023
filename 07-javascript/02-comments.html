@@ -4,39 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comments</title>
+    <title>TEMPLATE</title>
     <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
     <main>
         <header>
-            <h1>Comments
-            <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
-              </svg></a>
+            <h1>
+                <a href="index.html"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                      </svg>
+                </a>
+                <span>Comments</span>
             </h1>
+            
         </header>
-      <section>
-        <h2 id="today">Today</h2>
-      </section>
-        <nav class="menu">
-                     
-</nav>
-<script>
-    //esto es un comentario en linea
-    /*esto es 
-    un comentario 
-    en separado*/
-    console.today = document.getElementById('today')
-    var ndate = new Date
-    console.log(ndate)
-    today.textContent = `today is: ${ndate.getDate()}/
-                        today is: ${ndate.getMonth()+1}/
-                        today is: ${ndate.getFullYear()}/`
-// today.textContent = 'today is:' {ndate.getDate()} + '/' + (ndate.getMonth)
-    
+        <section>
+           <h2 id="Today">Today</h2>
+        </section>
+    </main>
+    <script>
+        // This is a comment line
+        /* This is a 
+        comment  
+        multi-line
+        or block comment */
+        const today = document.getElementById('today')
+        var mdate = new Date
+        console.log(ndate)
+        today.textContent = `Today is ${ndate.getDate()}/${ndate.getMonth()+1}/${ndate.getFullYear()}`
 
-</script>
-</main>
+        //today.textContent = 'today is: ' + ndate.getDate() + '/' + (ndate.getMonth()+1) + '/' + ndate.getFullYear()
+
+    </script>
 </body>
 </html>

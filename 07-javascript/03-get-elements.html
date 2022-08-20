@@ -4,81 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Get Elements</title>
     <link rel="stylesheet" href="css/menu.css">
     <style>
-        nav .o{
+        nav{
             display: flex;
             flex-direction: row;
             justify-content: center;
         }
-        nav button{
-            background-color: #0006;
-            color: #fff6;
-            border: none;
-            font-family: Poppins;
-            width: 100px;
+        nav button {
             height: 40px;
+            width: 100px;
+            background-color: #ffffff67;
+            color: #ffcc00;
+            border: none;
+            font-family: poppins;
+
         }
     </style>
-   
 </head>
 <body>
     <main>
         <header>
-            <h1>get elements
-            <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
-              </svg></a>
+            <h1>
+                <a href="index.html"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                      </svg>
+                </a>
+                <span>Get Elements</span>
             </h1>
+            
         </header>
-        <nav class="menu">
+        <section>
             <h2 id="show-year"></h2>
             <ul>
-                <li>charmander</li>
-                <li>picacku</li>
-                <li>lulo </li>
-                
+                <li>Bulbasur</li>
+                <li>Squirtle</li>
+                <li>Charmander</li>
             </ul>
             <h2 id="show-pks"></h2>
-            <p class="paragraph">Lorem, ipsum dolor.</p>
-            <p class="paragraph">Lorem, ipsum dolor.</p>
+            <p class="paragraph">Lorem ipsum dolor</p>
+            <p class="paragraph">Lorem ipsum dolor</p>
             <h2 id="show-prs"></h2>
-            <nav class="o">
-                <button class="btn btn1">button 1</button>
-                <button class="btn btn2">button 2</button>
-                <button class="btn btn3">button 3</button>
+            <nav>
+                <button class="btn btn1">Button 1</button>
+                <button class="btn btn2">Button 2</button>
+                <button class="btn btn3">Button 3</button>
             </nav>
-</nav>
-</main>
-<script>
-    //change dom  (documenr object model)
-    //querySelector
-    //let title = document.querySelector('h1')
-    //title.innerHTML = 'chachafruto'
-
-    const show_year = document.getElementById('show-year')
-    const show_pks = document.getElementById('show-pks')
-    const show_prs = document.getElementById('show-prs')
-    let today = new Date
-    show_year.textContent ='año actual:' + today.getFullYear()
-    //getElementsByTagName
-    const num_pks=document.getElementsByTagName('li')
-    show_pks.textContent=`hay  ${num_pks.length} pokemons, `
-    show_pks.textContent += `el ultimo de ellos es: ${num_pks[num_pks.length-1].textContent}`
-    //getElementsByClassName
-    const num_prs = document.getElementsByClassName('paragraph')
-    num_prs[num_prs.length-1].style.color = "red"
-    show_prs.textContent = `paragraph contain class: ${num_prs[0].className}`
-    /*querySelector-querySelectorAll*/
-    const btn2 = document.querySelector('button.btn2')
-    const all_btns= document.querySelectorAll(button.bnt)
-    bnt2.style.backgroundColor = "#f1ce3f99" 
-    all_btns.forEach(element =>{
-        element.style.borderRadius = '10px 0px '
+        </section>
+    </main>
+    <script>
+        //Change DOM (Document Object Model)
         
-    })
-    
-</script>
+        /*let title = document.querySelector('h1')
+        title.innerText = 'Chachafruto' */
+
+        /* getElementById */
+        const show_year = document.getElementById('show-year')
+        const show_pks  = document.getElementById('show-pks')
+        const show_prs  = document.getElementById('show-prs')
+        let today       = new Date
+
+        //show_year.textContent = 'Current Year: ' + today.getFullYear()
+        show_year.textContent = `Current Year: ${today.getFullYear()}`
+
+        /** getElementsByTagName */
+        const num_pks = document.getElementsByTagName('li')
+        show_pks.textContent = `There are ${num_pks.length} pokemons and`
+        show_pks.textContent += ` the last pokemon is: ${num_pks[num_pks.length-1].textContent}`
+
+        /**getElementsByClassName*/
+        const num_prs = document.getElementsByClassName('paragraph')
+        num_prs[num_prs.length-1].style.color = '#ffcc00'
+        show_prs.textContent = `paragraphs contain class: ${num_prs[0].className}`
+
+        /* querySelector / querySelectorAll */
+        const btn2 = document.querySelector('button.btn2')
+        const all_btns = document.querySelectorAll('button.btn2')
+        btn2.style.backgroundColor = 'blue'
+
+        //all_btns[0].style.borderRadius = '10px 0px'
+        //all_btns[1].style.borderRadius = '10px 0px'
+        //all_btns[2].style.borderRadius = '10px 0px'
+
+        all_btns.forEach(element => {
+            element.style.borderRadius = '10px 0px'
+        })
+
+        
+    </script>
 </body>
 </html>

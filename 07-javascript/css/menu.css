@@ -1,53 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&family=Shadows+Into+Light&family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@300&family=Staatliches&family=Ubuntu:ital,wght@0,300;1,500&display=swap');
 
 body {
-    background: url(../images/wallhaven-yjdl2k_1920x1080.png) no-repeat center;
+    background: url(../images/img1.png) no-repeat center;
     background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
     min-height: 100vh;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
     display: flex;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    overflow-y: hidden;
+    justify-content: center; 
+    overflow-y: hidden;   
 }
 
 main {
-    margin: 2rem auto;
+    background-color: #0008;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    height: 670px;
     width: 34rem;
-    border-radius: 2rem;
-    background-color: rgba(43, 42, 7, 0.6);
-    
 }
-header h1 a svg{
-    width: 2.5rem;
-    height: 2.5rem;
-    
-    
-}
+
 header h1 {
-    background-color: rgb(255, 251, 0,0.6);
-    padding: 1rem;
-    text-align: center;
+    color: #fbff18;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
     font-weight: 500;
-    color: rgb(0, 0, 0);
-    border-bottom: 4px solid rgb(0, 0, 0);
-    
+    text-align: center;
+}
+header h1 a:link,
+header h1 a:visited{
+    color: #fffb00;
+    text-decoration: none;
+    position: absolute;
+    left: 1rem;
+    display: flex;
+    transition: transform 0.2s ease-in;
 
 }
 header h1 a:hover {
-    background-color: #eeff00;
-    transform: translateX(-10px);
+    transform: translateX(-4px);
 }
-
+header h1 a svg {
+    height: 2.5rem;
+    width: 2.5rem;
+}
 nav {
-    height: 594px;
     display: flex;
-    padding: 1.3rem;
     flex-direction: column;
-    border-color: #000000;
+    gap: 0.4rem;
+    padding: 0.4rem;
     overflow-y: auto;
+    height: 494px;
     gap: 0.4rem;
 }
 
@@ -57,51 +63,50 @@ nav li {
 
 nav li a:link,
 nav li a:visited {
-    background-color: #f5e71e59;
-    color: rgb(0, 0, 0);
+    background-color: #0003;
+    color: #fffc39;
     display: flex;
-    padding: 0.4rem;
     flex-direction: row;
     text-decoration: none;
     align-items: center;
+    padding: 0.4rem;
     transition: all 0.2s ease-in;
-    border: 1px solid rgb(0, 0, 0);
-    
+    border-radius: 2rem;
 }
 
 nav li a i {
-    background-color: rgb(0, 0, 0);
-    padding: 0.6rem;
-    font-weight: 500;
-    font-size: 0.99rem;
-    margin-right: 0.8rem;
+    background-color: #fbff00;
+    color: #050cdc8e;
+    padding: 0.8rem;
+    font-weight: 480;
+    font-size: 1.7rem;
     font-style: normal;
-    color: rgb(255, 251, 0);
+    margin-right: 0.8rem;
+    text-align: center;
     height: 2rem;
     width: 2rem;
-    text-align: center;
     transition: all 0.2s 0.2s ease-in;
+    border-radius: 2rem;
 }
 
 nav li a:hover {
-    background-color: rgb(0, 0, 0);
-    color:rgb(219, 221, 88) ;
-    border: 2px solid rgb(255, 251, 0);
+    background-color: #000000aa;
+    color: #25ff3e;
 }
 
 nav li a:hover i {
-    transform: scale(1.10);
-    background-color: rgb(255, 238, 0);
-    color: #000;
+    transform: scale(1.25);
+    color: #000000;
 }
-nav h1,
-nav h2
-{
-    padding: 1.8rem;
-    color: rgb(255, 255, 7);
+section{
+    padding: 1.2rem;
+    color: #ffffff;
+}
+section h1,
+section h2 {
+    color: #ffcc00;
     text-align: center;
-    border-bottom: 1rem;
+    padding-bottom: 1rem;
     margin-top: 1rem;
-    border-bottom: 2px dashed;
+    border-bottom: 2px dashed #ffcc00;
 }
-
