@@ -7,8 +7,11 @@
     <title>Class Vehicle</title>
     <link rel="stylesheet" href="css/menu.css">
     <style>
+        main.light{
+
+        }
         main {
-             background: url(images/Vehicles/Rectangle_bg.svg);
+             background: url(images/Vehicles/Rectangle_bg.svg) no-repeat center;
              height: 680px;
              width: 26rem;
         }
@@ -23,9 +26,10 @@
         section {
             position: relative;
         }
-
+        section button.btn_ligth {
+            background: url(images/Vehicles/btn_ligth.svg)no-repeat center;}
         section button.btn__dark {
-            background: url(images/Vehicles/btn_dark1.svg);
+            background: url(images/Vehicles/btn_dark1.svg)no-repeat center;
             border: none;
             cursor: pointer;
             height: 68px;
@@ -275,7 +279,7 @@
             }
         }
 
-        getInfo() {
+        getInfo(); {
             //return `The brand is: ${this.brand}`
             e_brand.textContent = this.brand
             e_brand.textContent = this.refer
