@@ -1,44 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Krub:wght@300&family=Staatliches&family=Ubuntu:ital,wght@0,300;1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 body {
-    background: url(../images/img1.png) no-repeat center;
+    background: url(../images/bg.webp) no-repeat center;
     background-size: cover;
-    font-family: 'Ubuntu', sans-serif;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center; 
-    overflow-y: hidden;   
+    overflow-y: hidden;
+    justify-content: center;
+    min-height: 100vh;
 }
-
 main {
     background-color: #0008;
     border-radius: 1rem;
-    margin: 1rem auto;
-    height: 670px;
-    width: 34rem;
+    height: 680px;
+    width: 26rem;
 }
-
 header h1 {
-    color: #fbff18;
+    color: #f1ce3f;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
     font-weight: 500;
     text-align: center;
 }
 header h1 a:link,
-header h1 a:visited{
-    color: #fffb00;
-    text-decoration: none;
+header h1 a:visited {
+    display: flex;
+    color: #f1ce3f;
     position: absolute;
     left: 1rem;
-    display: flex;
+    text-decoration: none;
     transition: transform 0.2s ease-in;
-
 }
 header h1 a:hover {
     transform: translateX(-4px);
@@ -50,63 +45,58 @@ header h1 a svg {
 nav {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
-    padding: 0.4rem;
+    padding: 1.2rem;
     overflow-y: auto;
-    height: 494px;
+    height: 490px;
     gap: 0.4rem;
 }
-
 nav li {
     list-style: none;
 }
-
 nav li a:link,
 nav li a:visited {
     background-color: #0003;
-    color: #fffc39;
+    border-radius: 2rem;
+    color: #fff;
     display: flex;
     flex-direction: row;
     text-decoration: none;
     align-items: center;
-    padding: 0.4rem;
+    padding: 0.2rem;
     transition: all 0.2s ease-in;
-    border-radius: 2rem;
 }
-
 nav li a i {
-    background-color: #fbff00;
-    color: #050cdc8e;
-    padding: 0.8rem;
-    font-weight: 480;
-    font-size: 1.7rem;
+    background-color: #f1ce3f;
+    border-radius: 2rem;
+    color: #00000099;
+    padding: 0.6rem;
+    font-weight: 500;
+    font-size: 1.4rem;
     font-style: normal;
     margin-right: 0.8rem;
     text-align: center;
+    transform: scale(0.7);
     height: 2rem;
     width: 2rem;
-    transition: all 0.2s 0.2s ease-in;
-    border-radius: 2rem;
+    transition: all 0.2s ease-in;
 }
-
 nav li a:hover {
-    background-color: #000000aa;
-    color: #25ff3e;
+    background-color: #0009;
 }
 
 nav li a:hover i {
-    transform: scale(1.25);
-    color: #000000;
+    transform: scale(0.9);
 }
-section{
+section {
+    color: #fffa;
     padding: 1.2rem;
-    color: #ffffff;
 }
 section h1,
 section h2 {
-    color: #ffcc00;
+    color: #f1ce3f99;
     text-align: center;
+    font-size: 1.2rem;
     padding-bottom: 1rem;
     margin-top: 1rem;
-    border-bottom: 2px dashed #ffcc00;
+    border-bottom: 2px dashed #f1ce3f99;
 }

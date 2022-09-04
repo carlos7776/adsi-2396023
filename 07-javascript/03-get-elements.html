@@ -7,19 +7,21 @@
     <title>Get Elements</title>
     <link rel="stylesheet" href="css/menu.css">
     <style>
-        nav{
+        nav {
             display: flex;
             flex-direction: row;
             justify-content: center;
+            align-items: center;
+            height: 60px;
+            overflow: hidden;
         }
         nav button {
+            background-color: #0006;
+            color: #fff6;
+            border: none;
+            font-family: Poppins;
             height: 40px;
             width: 100px;
-            background-color: #ffffff67;
-            color: #ffcc00;
-            border: none;
-            font-family: poppins;
-
         }
     </style>
 </head>
@@ -27,19 +29,18 @@
     <main>
         <header>
             <h1>
-                <a href="index.html"> 
+                <a href="index.html">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
-                      </svg>
+                    </svg>
                 </a>
-                <span>Get Elements</span>
+                Get Elements
             </h1>
-            
         </header>
         <section>
             <h2 id="show-year"></h2>
             <ul>
-                <li>Bulbasur</li>
+                <li>Bulbasaur</li>
                 <li>Squirtle</li>
                 <li>Charmander</li>
             </ul>
@@ -55,44 +56,36 @@
         </section>
     </main>
     <script>
-        //Change DOM (Document Object Model)
+        // Change DOM (Document Object Model)
         
-        /*let title = document.querySelector('h1')
-        title.innerText = 'Chachafruto' */
-
-        /* getElementById */
+        /* getElementById */ 
         const show_year = document.getElementById('show-year')
         const show_pks  = document.getElementById('show-pks')
         const show_prs  = document.getElementById('show-prs')
         let today       = new Date
-
-        //show_year.textContent = 'Current Year: ' + today.getFullYear()
         show_year.textContent = `Current Year: ${today.getFullYear()}`
-
-        /** getElementsByTagName */
+        
+        /* getElementsByTagName */ 
         const num_pks = document.getElementsByTagName('li')
-        show_pks.textContent = `There are ${num_pks.length} pokemons and`
-        show_pks.textContent += ` the last pokemon is: ${num_pks[num_pks.length-1].textContent}`
-
-        /**getElementsByClassName*/
+        show_pks.textContent  = `There are ${num_pks.length} pokemons & ` 
+        show_pks.textContent += `last pokemon is: ${num_pks[num_pks.length-1].textContent}`
+        
+        /* getElementsByClassName*/ 
         const num_prs = document.getElementsByClassName('paragraph')
-        num_prs[num_prs.length-1].style.color = '#ffcc00'
-        show_prs.textContent = `paragraphs contain class: ${num_prs[0].className}`
+        num_prs[num_prs.length-1].style.color = '#f1ce3f99'
+        show_prs.textContent = `Paragraphs contains class: ${num_prs[0].className}`
 
-        /* querySelector / querySelectorAll */
-        const btn2 = document.querySelector('button.btn2')
-        const all_btns = document.querySelectorAll('button.btn2')
-        btn2.style.backgroundColor = 'blue'
+        /* querySelector / querySelectorAll */ 
+        const btn2     = document.querySelector('button.btn2')
+        const all_btns = document.querySelectorAll('button.btn')
+        btn2.style.backgroundColor = '#f1ce3f99'
 
-        //all_btns[0].style.borderRadius = '10px 0px'
-        //all_btns[1].style.borderRadius = '10px 0px'
-        //all_btns[2].style.borderRadius = '10px 0px'
-
+        // all_btns[0].style.borderRadius = '10px 0px'
+        // all_btns[1].style.borderRadius = '10px 0px'
+        // all_btns[2].style.borderRadius = '10px 0px'
         all_btns.forEach(element => {
             element.style.borderRadius = '10px 0px'
         })
-
-        
     </script>
 </body>
 </html>
