@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 body {
     background: url(../images/bg.webp) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ms Madi', sans-serif;
     font-weight: 200;
     display: flex;
     align-items: center;
