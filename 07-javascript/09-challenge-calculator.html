@@ -124,7 +124,7 @@
         div.display output.operation {
             font-weight: 275;
             font-size: 33px;
-            color: #fd0000;
+            color: #fdad00;
         }
         div.display output.result {
             font-weight: 275;
@@ -244,7 +244,7 @@
                 <button class="sum"  data-opr="+"></button>
                 <button class="cero" data-num="0"></button>
                 <button class="punto"data-opr="."></button>
-                <button class="igu"></button>
+                <button class="igu"data-opr=""></button>
             </div>
         </section>
     </main>
@@ -255,6 +255,7 @@
         const oper = document.querySelector('.operation')
         const clear = document.querySelector('.clear')
         const back = document.querySelector('.back')
+        const result = document.querySelector('.igu')
         //numeros y operadores
         const nums = document.querySelectorAll("button[data-num]")
         const oprs = document.querySelectorAll("button[data-opr]")
@@ -289,9 +290,14 @@
             if(isNaN(oper.textContent.slice(-1))){
                 operStatus=false
             }
-        
+        })
+        result.addEventListener('click',()=>{
+            showResult()
 
         })
+        function showResult(){
+            oper.value = eval (oper.value)
+        }
        
         document.addEventListener('keyup',(evt) => {
           console.log(evt.keyCode)
@@ -338,16 +344,19 @@
                     break;
                     case 105:
                 case 106:
-                    oper.textContent += x
+                    oper.textContent += '*'
                     break;
                 case 111:
-                    oper.textContent += d
+                    oper.textContent += '/'
                     break;  
                 case 109:
-                    oper.textContent += r
+                    oper.textContent += '-'
                     break; 
                 case 107:
-                    oper.textContent += s
+                    oper.textContent += '+'
+                    break; 
+                case 13:
+                    showResult()
                     break; 
                 default:
                 break;
