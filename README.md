@@ -13,6 +13,10 @@
 | 6. sass	    | preprocesador css 	               |[open folder](06-sass/)
 | 7. javascript	| lenguaje de programacion(client-side)|[open folder](07-javascript/)
 | 9. CMS	    | content management system(wp)        |[open folder](15-cms/)
+| 11. tailwind	| lenguaje Backend|[open folder](11-tailwind/)
+| 12. php	| lenguaje Backend|[open folder](12-php/)
+
+
  
 
 ![imagen](https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80)
